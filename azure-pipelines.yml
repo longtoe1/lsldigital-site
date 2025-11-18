@@ -1,0 +1,31 @@
+# azure-pipelines.yml
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - checkout: self
+    displayName: 'Checkout code'
+
+  # Deploy static files to Fasthosts via FTP
+  - task: FtpUpload@2
+    displayName: 'Deploy site to Fasthosts'
+    inputs:
+      credentialsOption: 'inputs'
+      serverUrl: 'ftp:// ftp.fasthosts.co.uk'
+      username: 'lsldigital.co.uk'
+      password: '$(ftpPassword)'
+      rootDirectory: '$(System.DefaultWorkingDirectory)'
+      filePatterns: |
+        **/*.html
+        **/*.css
+        **/*.png
+      remoteDirectory: '/htdocs'
+      clean: true
+      cleanContents: true
+      preservePaths: true
+      trustSSL: true
