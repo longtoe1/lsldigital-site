@@ -1,0 +1,112 @@
+:root {
+  --lsl-orange: #f58220;
+  --lsl-orange-dark: #d96c12;
+  --lsl-light-grey: #f4f4f4;
+  --lsl-mid-grey: #6c757d;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand {
+  letter-spacing: 0.06em;
+  font-size: 1.05rem;
+}
+
+.lsl-logo {
+  height: 40px;
+}
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(245, 130, 32, 0.06),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.hero-card {
+  border-radius: 1.5rem;
+}
+
+.hero-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background-color: var(--lsl-orange);
+  flex-shrink: 0;
+}
+
+.bg-accent {
+  background-color: var(--lsl-orange) !important;
+}
+
+.badge.bg-accent {
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: var(--lsl-orange);
+  border-color: var(--lsl-orange);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--lsl-orange-dark);
+  border-color: var(--lsl-orange-dark);
+}
+
+.btn-outline-secondary {
+  border-width: 1.5px;
+}
+
+.bg-light-alt {
+  background-color: var(--lsl-light-grey);
+}
+
+.service-card {
+  border-radius: 1.25rem;
+}
+
+.service-card .card-body {
+  padding: 1.75rem 1.5rem;
+}
+
+.about-card {
+  border-radius: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #212529;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+.form-control:focus {
+  border-color: var(--lsl-orange);
+  box-shadow: 0 0 0 0.2rem rgba(245, 130, 32, 0.25);
+}
+
+@media (min-width: 992px) {
+  .hero-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+.text-muted {
+  color: var(--lsl-mid-grey) !important;
+}

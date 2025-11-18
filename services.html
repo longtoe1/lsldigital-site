@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services – LSL Digital</title>
+  <meta name="description" content="Detailed IT, security, cloud and network services from LSL Digital, including Microsoft 365 hardening, Cyber Essentials preparation and Wi‑Fi audits." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="LSL Digital logo" class="me-2 lsl-logo" />
+        <span class="visually-hidden">LSL Digital</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Service details</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container">
+      <h1 class="fw-bold mb-4">Service details</h1>
+      <p class="text-muted mb-5">
+        Below is an overview of our core services. Every engagement is tailored to your environment and risk profile, with clear fixed pricing and agreed scope up front.
+      </p>
+
+      <article class="mb-5">
+        <h2 class="h4">Microsoft 365 Hardening</h2>
+        <p class="text-muted">
+          We secure your Microsoft 365 tenant using best practices aligned to guidance from Microsoft and common cyber insurance / compliance requirements.
+        </p>
+        <ul>
+          <li>MFA and conditional access policies</li>
+          <li>Disabling legacy authentication</li>
+          <li>Admin role and privileged access review</li>
+          <li>Mail flow, anti-phishing and anti-malware configuration</li>
+          <li>External sharing controls for SharePoint, OneDrive and Teams</li>
+          <li>Device compliance checks and baseline policies</li>
+        </ul>
+      </article>
+
+      <article class="mb-5">
+        <h2 class="h4">Cyber Essentials Pre‑Assessment</h2>
+        <p class="text-muted">
+          A structured review of your environment against the Cyber Essentials controls so you know exactly what needs to be addressed before certification.
+        </p>
+        <ul>
+          <li>Asset and device inventory review</li>
+          <li>Patch management and anti‑virus status checks</li>
+          <li>Firewall and network boundary review</li>
+          <li>Admin privileges and access control</li>
+          <li>Microsoft 365 security configuration review</li>
+          <li>Prioritised remediation plan</li>
+        </ul>
+      </article>
+
+      <article class="mb-5">
+        <h2 class="h4">Network &amp; Wi‑Fi Audit</h2>
+        <p class="text-muted">
+          We look at your wired and wireless network design, configuration and performance to identify bottlenecks, misconfigurations and coverage problems.
+        </p>
+        <ul>
+          <li>Wi‑Fi coverage, channel and power analysis</li>
+          <li>Access point placement and configuration review</li>
+          <li>Switch, VLAN and routing design</li>
+          <li>DNS, DHCP and gateway checks</li>
+          <li>Firewall rule and NAT review</li>
+          <li>Clear remediation recommendations and optional implementation project</li>
+        </ul>
+      </article>
+
+      <article class="mb-5">
+        <h2 class="h4">Azure Landing Zone &amp; Cloud Architecture</h2>
+        <p class="text-muted">
+          We help you create secure, well‑structured Azure environments ready for production workloads.
+        </p>
+        <ul>
+          <li>Subscription, management group and resource group structure</li>
+          <li>Networking, VNets, subnets and segmentation</li>
+          <li>Identity and access management design</li>
+          <li>Security baselines and policy</li>
+          <li>Monitoring, logging and alerting setup</li>
+        </ul>
+      </article>
+
+      <article class="mb-4">
+        <h2 class="h4">Monthly IT &amp; Security Support</h2>
+        <p class="text-muted">
+          For organisations that want ongoing oversight, we provide a lightweight virtual IT and security function.
+        </p>
+        <ul>
+          <li>Regular security and configuration checks</li>
+          <li>Patch and vulnerability oversight</li>
+          <li>Review of key alerts and incidents</li>
+          <li>Quarterly roadmap and risk discussion</li>
+        </ul>
+      </article>
+
+      <p class="text-muted">
+        For bespoke projects or larger pieces of work, please get in touch to discuss your requirements.
+      </p>
+    </div>
+  </main>
+
+  <footer class="py-3 border-top bg-white">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span class="small text-muted">© <span id="year"></span> LSL Digital</span>
+      <span class="small text-muted"><a href="privacy.html">Privacy</a> · <a href="cookies.html">Cookies</a></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
