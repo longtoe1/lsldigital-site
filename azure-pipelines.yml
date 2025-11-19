@@ -16,7 +16,7 @@ steps:
     displayName: 'Deploy site to Fasthosts'
     inputs:
       credentialsOption: 'inputs'
-      serverUrl: 'ftp:// ftp.fasthosts.co.uk'
+      serverUrl: 'ftp://ftp.lsldigital.co.uk'
       username: 'lsldigital.co.uk'
       password: '$(ftpPassword)'
       rootDirectory: '$(System.DefaultWorkingDirectory)'
