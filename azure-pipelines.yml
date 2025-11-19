@@ -25,7 +25,7 @@ steps:
         **/*.css
         **/*.png
       remoteDirectory: '/htdocs'
-      clean: true
-      cleanContents: true
+      clean: false
+      cleanContents: false
       preservePaths: true
       trustSSL: true
