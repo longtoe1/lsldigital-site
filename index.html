@@ -33,19 +33,19 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item">
-            <a class="nav-link" href="index.html#services">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Service details</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#about">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#contact">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
           <li class="nav-item ms-lg-3">
-            <a class="btn btn-primary" href="index.html#contact">Free IT Risk Review</a>
+            <a class="btn btn-primary" href="#contact">Free IT Risk Review</a>
           </li>
         </ul>
       </div>
@@ -58,7 +58,7 @@
         <div class="col-lg-6">
           <span class="badge bg-accent text-dark mb-3">Enterprise IT. SME Prices.</span>
           <h1 class="display-5 fw-bold mb-3">
-            Secure, modern IT for growing businesses (via LSL Digital).
+            Secure, modern IT for growing businesses.
           </h1>
           <p class="lead text-muted mb-4">
             Security, cloud and network solutions delivered with senior-level expertise
@@ -87,7 +87,7 @@
               </li>
               <li class="d-flex mb-2">
                 <span class="hero-bullet me-2 mt-1"></span>
-                <span>Network &amp; Wi‑Fi audits and fixes</span>
+                <span>Network &amp; Wi-Fi audits and fixes</span>
               </li>
               <li class="d-flex mb-2">
                 <span class="hero-bullet me-2 mt-1"></span>
@@ -140,7 +140,7 @@
           <div class="card h-100 shadow-sm border-0 service-card">
             <div class="card-body">
               <span class="badge bg-accent mb-2">£2,000–£3,000</span>
-              <h3 class="h5 card-title">Cyber Essentials Pre‑Assessment</h3>
+              <h3 class="h5 card-title">Cyber Essentials Pre-Assessment</h3>
               <p class="card-text text-muted">
                 Prepare your business to pass Cyber Essentials first time.
               </p>
@@ -162,9 +162,9 @@
           <div class="card h-100 shadow-sm border-0 service-card">
             <div class="card-body">
               <span class="badge bg-accent mb-2">£1,500–£2,500</span>
-              <h3 class="h5 card-title">Network &amp; Wi‑Fi Audit</h3>
+              <h3 class="h5 card-title">Network &amp; Wi-Fi Audit</h3>
               <p class="card-text text-muted">
-                Find the root causes of slow, unreliable networks and Wi‑Fi.
+                Find the root causes of slow, unreliable networks and Wi-Fi.
               </p>
               <ul class="small ps-3 mb-3">
                 <li>Coverage &amp; interference analysis</li>
@@ -223,7 +223,7 @@
               </li>
               <li class="d-flex mb-2">
                 <span class="hero-bullet me-2 mt-1"></span>
-                <span>Plain‑English recommendations, focused on business value.</span>
+                <span>Plain-English recommendations, focused on business value.</span>
               </li>
               <li class="d-flex">
                 <span class="hero-bullet me-2 mt-1"></span>
@@ -261,22 +261,22 @@
           <div class="card shadow-sm border-0">
             <div class="card-body p-4">
               <h3 class="h5 mb-3">Contact form</h3>
-              <form>
+              <form action="contact.php" method="post">
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Your name" />
+                  <input type="text" class="form-control" id="name" name="name" required />
                 </div>
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+                  <input type="email" class="form-control" id="email" name="email" required />
                 </div>
                 <div class="mb-3">
                   <label for="company" class="form-label">Company</label>
-                  <input type="text" class="form-control" id="company" placeholder="Your company name" />
+                  <input type="text" class="form-control" id="company" name="company" />
                 </div>
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="4" placeholder="How can we help?"></textarea>
+                  <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary w-100">
                   Send message
